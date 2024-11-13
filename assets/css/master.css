@@ -228,7 +228,7 @@ body {
     background-color: #d4eaf5;
 }
 
-/* start testimgitonial */
+/* Start testimgitonial */
 .testimonial {
     padding-block: 5rem;
     background-color: #f7f7f7;
@@ -245,5 +245,56 @@ body {
                 object-position: 50% 90%;
             }
         }
+    }
+}
+
+/* Start production */
+.production {
+    padding-block: 5rem;
+    background-color: #f7f7f7;
+
+    >.container>.row {
+        >div {
+            /* border: 1px solid red; */
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            text-align: center;
+            justify-content: space-between;
+
+            >span {
+                display: flex;
+                width: 150px;
+                height: 150px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                background-color: #fff;
+                color: #cf7500;
+                font-size: 4rem;
+            }
+
+
+        }
+
+        &::before {
+            content: '';
+            display: flex;
+            width: 70%;
+            height: 50%;
+            position: absolute;
+            top: 25%;
+            left: 15%;
+            border-top: 1px dashed gray;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .production>.container>.row::before {
+        display: none;
     }
 }
