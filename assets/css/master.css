@@ -227,3 +227,23 @@ body {
 .statistics {
     background-color: #d4eaf5;
 }
+
+/* start testimgitonial */
+.testimonial {
+    padding-block: 5rem;
+    background-color: #f7f7f7;
+
+    .carousel {
+        max-height: 400px !important;
+
+
+        .carousel-item {
+
+            height: 400px;
+
+            img {
+                object-position: 50% 90%;
+            }
+        }
+    }
+}
