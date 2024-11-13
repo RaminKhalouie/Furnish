@@ -1,0 +1,40 @@
+/* Variables */
+:root {
+    --color-dark-blue: #1C5B79;
+    --color-light-blue: #d4eaf5;
+    --text-dark-blue: #052c43;
+}
+
+/* Custom */
+.w-fit {
+    width: fit-content;
+}
+
+.dark-blue {
+    color: var(--color-dark-blue);
+}
+
+.text-dark-blue {
+    color: var(--text-dark-blue);
+}
+
+/* Start Header */
+.top-header {
+    height: 100vh;
+
+    >.mobile-nav {
+        background-color: var(--color-dark-blue);
+    }
+
+    >.row {
+        >.left-side {
+            background-color: var(--color-light-blue);
+        }
+
+        >.right-side {
+            background-image: url("../images/bg_2.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+    }
+}
