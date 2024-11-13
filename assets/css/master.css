@@ -3,6 +3,15 @@
     --color-dark-blue: #1C5B79;
     --color-light-blue: #d4eaf5;
     --text-dark-blue: #052c43;
+
+    --light-red: #f5ebeb;
+    --dark-red: #cb9696;
+    --light-green: #dcebdd;
+    --dark-green: #8bbd8e;
+    --light-yellow: #f5efd8;
+    --dark-yellow: #d1b54a;
+    --light-orange: #f4e6d8;
+    --dark-orange: #d29a61;
 }
 
 /* Custom */
@@ -35,6 +44,63 @@
             background-image: url("../images/bg_2.jpg");
             background-position: center;
             background-size: cover;
+        }
+    }
+}
+
+/* Start moto */
+.moto {
+    >.row {
+        >div {
+            padding: 2rem;
+
+            >span {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                display: flex;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 2rem;
+                color: white;
+            }
+
+            &:nth-of-type(1) {
+                background-color: var(--light-red);
+
+                >span {
+                    background-color: var(--dark-red);
+
+                }
+            }
+
+            &:nth-of-type(2) {
+                background-color: var(--light-green);
+
+                >span {
+                    background-color: var(--dark-green);
+
+                }
+            }
+
+            &:nth-of-type(3) {
+                background-color: var(--light-yellow);
+
+                >span {
+                    background-color: var(--dark-yellow);
+
+                }
+            }
+
+            &:nth-of-type(4) {
+                background-color: var(--light-orange);
+
+                >span {
+                    background-color: var(--dark-orange);
+
+                }
+            }
         }
     }
 }
