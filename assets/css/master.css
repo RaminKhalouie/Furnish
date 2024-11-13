@@ -298,3 +298,45 @@ body {
         display: none;
     }
 }
+
+/* Start footer */
+footer {
+    background-color: #d4eaf5;
+    padding-top: 4rem;
+
+    div[class*="col"] {
+        min-height: 250px;
+    }
+
+    >p {
+        color: grey;
+        background-color: #abd6eb;
+    }
+
+    figure {
+
+        figcaption {
+            transition: 0.4s;
+            opacity: 0;
+            cursor: pointer;
+
+            a {
+                text-decoration: none;
+                font-size: 1.5rem;
+                color: #052c43;
+                transition: 0.4s;
+
+                &:hover {
+                    scale: 1.3;
+                }
+            }
+
+        }
+
+        &:hover {
+            >figcaption {
+                opacity: 1;
+            }
+        }
+    }
+}
